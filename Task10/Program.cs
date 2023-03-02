@@ -8,10 +8,10 @@ Console.Clear();
 Console.Write("Введите число: ");
 
 string num = Console.ReadLine()!;
-if (num.Length < 3 || num.Length > 3)
+if (num.Length < 3 || num.Length > 3)// проверяем если у строки меньше или больше 3-х знаков
 {
-  Console.Write("Неправильное число: ");
-  return;
+  Console.Write("Неправильное число: ");// то выводим в консоль 
+  return;// и заканчиваем программу
 }
-string otvet = Convert.ToString(num[num.Length - 2]);
-Console.Write($"Вторая цифра: {otvet}");
+string otvet = Convert.ToString(num[num.Length - 2]);// создаём переменну и обращаемся к массиву где [num.Length - 2] находит вторую с конца цифру
+Console.Write($"Вторая цифра: {otvet}");// результат выводим в консоль
